@@ -61,7 +61,7 @@ h1{
     margin: 0px 0px 10px 0px;
     border-bottom: solid 30px rgb(2, 1, 3);
     background-image: url(resources/banner.jpg);
-    background-position-y: -110px;
+    background-position-y: 50vw;
     background-size: cover;
 }
 .hero ul{
@@ -291,6 +291,11 @@ footer div{
     flex: inherit;
 }
 
+@media screen and (min-width: 1200px){
+    h1{
+        background-position-y: -100px;
+    }
+}
 
 @media screen and (max-width: 1024px){
     .header{
@@ -345,9 +350,12 @@ footer div{
 
     h1{
         position: relative;
-        display: block;
+        display: flex;
         margin: 0px;
         border-bottom: solid 3vw rgb(2, 1, 3);
+        height: 33vw;
+        justify-content: center;
+        background-position-y: 34vw;
     }
     .hero_text_box{
         padding: 30px 20px 0px;
@@ -363,7 +371,7 @@ footer div{
         margin-top: 3vw;
     }
     .hero ul{
-        font-size: 50%;
+        font-size: 52%;
     }
     .hero_list_container{
         position: absolute;
@@ -375,16 +383,19 @@ footer div{
         margin-right: 2.8vw;
         padding: 0px;
         margin-top: 3vw;
+        list-style: none;
     }
     .hero_image_box{
-        text-align: -moz-center;
         height: 33vw;
-        margin-top: -6vw;
+        position: absolute;
+
     }
     .hero_image_container{
         border: none;
-        height: inherit;
+        height: 30vw;
         margin: 2vw;
+        width: 25vw;
+        padding: 0px;
     }
     .hero_image_container img{
         height: 30vw;
@@ -441,10 +452,7 @@ footer div{
 
 @media screen and (max-width: 480px){
     h1{
-        background-position-y: -40px;
-    }
-    .hero_image_box{
-        margin-top: -8vw;
+        background-position-y: 36vw;
     }
     .references{
         flex-direction: column;
