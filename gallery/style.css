@@ -1,0 +1,253 @@
+body{
+    background:rgb(2, 1, 3);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 2vw rgb(2, 1, 3);
+    border-bottom: solid 2vw rgb(2, 1, 3);
+    height: 11vw;
+    background-image: url(resources/a.jpg);
+    background-position-y: 0vw;
+    background-size: cover;
+}
+
+header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(218, 245, 230);
+    height: inherit;
+    font-size: 3.2vw;
+    font-weight: normal;
+    letter-spacing: 0.3vw;
+}
+.pics_head{
+    height: 5vw;
+    background-image: url(resources/ab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    margin: 1vw 0vw 2vw;
+}
+.topic{
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(218, 245, 230);
+    font-weight: normal;
+    font-size: 1.6vw;
+    padding-left: 1vw;
+}
+.details{
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(218, 245, 230);
+    font-weight: normal;
+    font-size: 0.8vw;
+    padding-left: 0vw;
+    margin-top: -0.7vw;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pic_container{
+    margin: 0.7vw;
+    width: 18vw;
+}
+.pic_container a{
+    width: inherit;
+}
+.pic_container img{
+    width: inherit;
+    transition: 1s;
+}
+.pic_container img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+.videos_head{
+    height: 4vw;
+    background-image: url(resources/ab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    margin: 3vw 0vw 2vw;
+}
+.topic_video{
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(218, 245, 230);
+    font-weight: normal;
+    font-size: 2vw;
+    padding-left: 4vw;
+}
+.videos{
+    width: auto;
+    height: 20vw;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3vw;
+}
+.youtube_video{
+    position: relative;
+    width: 46%;
+    height: inherit;
+}
+.video{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;  
+}
+.follow{ 
+    height: 3vw;
+    width: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.follow p{
+    color: rgb(218, 245, 230);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3vw;
+    margin-right: 2px;
+}
+.follow a{
+    height: 3vw;
+}
+.follow img{
+    height: inherit;
+}
+
+
+.footer{
+    color: rgb(254, 245, 230);
+    background-color: rgb(2, 1, 3);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+    margin-top: 1vw;
+}  
+.footer a{
+    text-decoration: none;
+    color: rgb(254, 245, 177);
+}
+
+
+.mega{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+    flex: inherit;
+}
+
+@media screen and (min-width: 1200px){
+    .pic_container{
+        margin: 8px;
+        width: 220px;
+    }
+}
+@media screen and (max-width: 1024px){
+
+
+}
+
+@media screen and (max-width: 766px){
+    .pics_head{
+        height: 6.2vw;
+    }
+    .topic{
+        font-size: 2vw;
+    }
+    .pic_container{
+        width: 22vw;
+    }
+    .videos_head{
+        height: 5.2vw;
+    }
+    .topic_video{
+        font-size: 2.5vw;
+    }
+    .videos{
+        flex-direction: column;
+        width: auto;
+        height: 80vw;
+        margin: 0px;
+    }
+    .youtube_video{
+        width: auto;
+        margin: 0vw 15vw;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .pic_container {
+        width: 30vw;
+    }
+    .videos{
+        flex-direction: column;
+        width: auto;
+        height: 100vw;
+        margin: 0px;
+    }
+    .youtube_video{
+        width: auto;
+        margin: 0vw 8vw;
+    }
+    .follow{ 
+        height: 4vw;
+    }
+    .follow p{
+        font-size: 2.3vw;
+        margin-right: 2px;
+    }
+    .follow a{
+        height: 4vw;
+    }
+    footer{
+        font-size: 1.5vw;
+        margin-top: 1.5vw;
+    }  
+}
+
+@media screen and (max-width: 320px){
+    .pic_container {
+        width: 44vw;
+    }
+    .videos{
+        flex-direction: column;
+        width: auto;
+        height: 110vw;
+        margin: 0px;
+    }
+    .youtube_video{
+        width: auto;
+        margin: -1vw 1vw;
+    }
+    .follow{ 
+        height: 4vw;
+    }
+    .follow p{
+        font-size: 2.3vw;
+        margin-right: 2px;
+    }
+    .follow a{
+        height: 5vw;
+    }
+    .footer{
+        font-size: 2vw;
+        margin-top: 2vw;
+    }  
+
+}
