@@ -245,7 +245,6 @@ h2{
     height: inherit;
 }
 .email_field{
-    border-style: solid;
     border-radius: 1.3vw;
     padding-left: 25px;
     padding-top: 8px;
@@ -255,6 +254,7 @@ h2{
     background-position-y: center;
     background-position: 5px;
     background-size: 15px;
+    overflow: hidden;
 }
 .email-button{
     border-style: solid;
