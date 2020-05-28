@@ -488,15 +488,15 @@ footer div{
     }
     .reference_globalContainer{
         width: 80vw;
-        height: 50vw;
-        margin: 5vw 8vw;
+        height: auto;
+        margin: 3vw 8vw;
     }
     #Referencias{
         margin-bottom: auto;
     }
     .contact{
         flex-direction: row;
-        margin-top: 2vw;
+        margin-top: 0vw;
     }
     .form_container h3{
         font-size: 15px;
