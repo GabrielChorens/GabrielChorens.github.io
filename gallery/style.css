@@ -164,20 +164,26 @@ header h1 {
 }
 
 @media screen and (max-width: 766px){
-    .pics_head{
-        height: 6.2vw;
+    header h1 {
+        font-size: 4.2vw;
+    }
+    .pics_head {
+        height: 8.2vw;
     }
     .topic{
-        font-size: 2vw;
+        font-size: 2.5vw;
+    }
+    .details{
+        font-size: 1.5vw;
     }
     .pic_container{
         width: 22vw;
     }
     .videos_head{
-        height: 5.2vw;
+        height: 6.2vw;
     }
     .topic_video{
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
     .videos{
         flex-direction: column;
@@ -188,6 +194,15 @@ header h1 {
     .youtube_video{
         width: auto;
         margin: 0vw 15vw;
+    }
+    .follow{
+        height: 5vw;
+    }
+    .follow p {
+        font-size: 2.3vw;
+    }
+    .footer{
+        font-size: 2vw;
     }
 }
 
