@@ -134,7 +134,7 @@ h2{
 }
 .reference_globalContainer{
     display: flex;
-    width: 48%;
+    width: 43%;
     height: 27vw;
     margin: 1%;
     flex-wrap: wrap;
@@ -162,7 +162,8 @@ h2{
 }
 
 .references article{
-    width: 80%;
+    width: 90%;
+    padding: 0.2vw;
     border: rgb(254, 245, 177) solid 1px;
     background-color: rgb(239, 238, 241);
     border-radius: 1.3vw;
@@ -179,8 +180,10 @@ h2{
     margin-bottom: 0.5vw;
 }
 .references p{
-    font-size: 1.4vw;
+    font-size: 1.3vw;
+    line-height: 2vw;
     color: rgb(255, 255, 255);
+    margin: 0.3vw 0vw;
 }
 
 
@@ -365,13 +368,13 @@ footer div{
         position: absolute;
         top: 0px;
         left: 0px;
-        width: 21vw;
-        font-size: 2.8vw;
+        width: 26vw;
+        font-size: 100%;
         margin-left: 2.8vw;
         margin-top: 3vw;
     }
     .hero ul{
-        font-size: 52%;
+        font-size: 63%;
     }
     .hero_list_container{
         position: absolute;
@@ -379,7 +382,7 @@ footer div{
         right: 0px;
         text-align: end;
         margin: 0px;
-        width: 21vw;
+        width: 26vw;
         margin-right: 2.8vw;
         padding: 0px;
         margin-top: 3vw;
@@ -402,12 +405,38 @@ footer div{
         width: 25vw;
         border-radius: 3px;
     }
+    .resume{
+        font-size: 2.5vw;
+    }
+    .subs{
+        font-size: 3.4vw;
+    }
+    .reference_globalContainer{
+        width: 48%;
+        height: 30vw;
+    }
+    .reference_container {
+        margin: 0px 0px -6vw 0px;
+    }    
+    .references article {
+        width: 88%;
+        padding: 0.2vw;
+        height: 12vw;
+    }
+    .references h3 {
+        margin-top: -0.4vw;
+        margin-bottom: -0.5vw;
+    }
+    .references p {
+        line-height: 2vw;
+        font-size: 1.8vw;
+    }
     .contact{
         flex-direction: column;
         align-items: center;
         /* border-left: solid 15px #171821;
         border-right: solid 15px #171821; */
-        margin-top: 20px;
+        margin-top: 7vw;
     }
     .form_container{
         display: flex;
@@ -459,7 +488,7 @@ footer div{
     }
     .reference_globalContainer{
         width: 80vw;
-        height: 40vw;
+        height: 50vw;
         margin: 5vw 8vw;
     }
     #Referencias{
@@ -467,6 +496,7 @@ footer div{
     }
     .contact{
         flex-direction: row;
+        margin-top: 2vw;
     }
     .form_container h3{
         font-size: 15px;
@@ -493,5 +523,11 @@ footer div{
         height: 30px;
         width: 30px;
         margin: 5px 15px;
+    }
+    .contact{
+        margin-top: 2vw;
+    }
+    .footer {
+        font-size: 10px;
     }
 }
