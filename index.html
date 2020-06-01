@@ -14,10 +14,9 @@
     
     <div class="mega">
     <header class="header">
-                <!-- <figure class="logo">
-                    <img src="resources/LogoBlue.png"
-                    alt="Logo">
-                </figure> -->
+                <h1>
+                    Menu
+                </h1>
                 <nav class="menu">
                     <ul>
                         <li>
@@ -34,6 +33,10 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="menu-container">
+                    <i class="icon-menu"></i>               
+                </div>
+                </a>
             </header>
         </div>
 
@@ -195,16 +198,21 @@
                     <h3>Trabajemos Juntos</h3>
                     <h4>Introduce tu Email</h4>
             <form class="email" action="mailto:gabrielchorens@gmail.com" method="post">
-                <input class="email_field" type="text" placeholder="Introduce tu email">
+                <div class="field-envelop">
+                    <figure>
+                        <i class="icon-envelop"></i>  
+                    </figure>
+                    <input class="email_field" type="text" placeholder="Introduce tu email">        
+                </div>                
                 <input class="email-button" type="submit" value="Enviar">
             </form>
             </div>
             <div class="div_socialImages">
                 <figure class="social_container">
-                    <a href="https://www.facebook.com/Gabriel-Chorens-342131543129241/" target="_blank"><img src="resources/Facebook.png" alt="Logo de Facebook"></a>
+                    <a href="https://www.facebook.com/Gabriel-Chorens-342131543129241/" target="_blank"><i class="icon-facebook"></i></a>
                 </figure>
                 <figure class="social_container">
-                    <a href="https://www.linkedin.com/in/gabriel-chorens-3630b8182" target="_blank"><img src="resources/Linkedin.png" alt="Logo de Linkedin"></a>
+                    <a href="https://www.linkedin.com/in/gabriel-chorens-3630b8182" target="_blank"><i class="icon-linkedin"></i></a>
                 </figure>
             </div>
             </section>
@@ -221,5 +229,27 @@
             </footer>
         </div>
     
+        <script>
+            const responsive = window.matchMedia('screen and (max-width: 766px)')
+            const menu = document.querySelector('.menu');
+            const button = document.querySelector('.menu-container');
+
+            responsive.addListener(match)
+            function match(status){
+                if (status.matches){
+                    button.addEventListener('click', toogle)
+                } else {
+                    button.removeEventListener('click', toogle)
+                }
+            }
+            function toogle() {
+                if (menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                } else {
+                    menu.classList.add('active');    
+                }
+            }
+
+        </script>
 </body>
 </html>
