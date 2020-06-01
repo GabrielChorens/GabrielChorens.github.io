@@ -536,6 +536,9 @@ header i{
         line-height: 2vw;
         font-size: 1.8vw;
     }
+    .references a:hover{
+        font-size: 70%;
+    }
     .contact{
         flex-direction: column;
         align-items: center;
@@ -573,7 +576,7 @@ header i{
         font-size: 6vw;
     }
     .social_container a:hover{
-        font-size: 7vw;
+        font-size: initial;
     }
     .footer{
         flex-direction: column;
@@ -626,6 +629,9 @@ header i{
     .form_container h4{
         font-size: 12px;     
     }
+    .field-envelop figure{
+        padding: 0.24px 6px;   
+    }
     .email {
         align-items: initial;
         width: 57px;
@@ -635,6 +641,9 @@ header i{
         font-size: 11px;
         padding: 6.5px;
     }
+    .email-button:hover{
+        transform: none;
+    }
     .social_container{
         margin: 32px 0px 0px 12px;
     }
@@ -642,7 +651,7 @@ header i{
         font-size: 8vw;
     }
     .social_container a:hover{
-        font-size: 9vw;
+        font-size: initial;
     }
     .footer{
         font-size: 15px;
@@ -660,7 +669,7 @@ header i{
         font-size: 9vw;
     }
     .social_container a:hover{
-        font-size: 10vw;
+        font-size: 9vw;
     }
     .contact{
         margin-top: 2vw;
