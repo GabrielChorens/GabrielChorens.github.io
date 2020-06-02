@@ -576,7 +576,7 @@ header i{
         font-size: 6vw;
     }
     .social_container a:hover{
-        font-size: initial;
+        font-size: 6vw;
     }
     .footer{
         flex-direction: column;
@@ -629,9 +629,6 @@ header i{
     .form_container h4{
         font-size: 12px;     
     }
-    .field-envelop figure{
-        padding: 0.24px 6px;   
-    }
     .email {
         align-items: initial;
         width: 57px;
@@ -641,8 +638,11 @@ header i{
         font-size: 11px;
         padding: 6.5px;
     }
+    .field-envelop figure {
+        padding: 0px 6px;
+    }
     .email-button:hover{
-        transform: none;
+        transform: unset;
     }
     .social_container{
         margin: 32px 0px 0px 12px;
@@ -651,7 +651,7 @@ header i{
         font-size: 8vw;
     }
     .social_container a:hover{
-        font-size: initial;
+        font-size: 8vw;
     }
     .footer{
         font-size: 15px;
